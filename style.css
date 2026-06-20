@@ -80,6 +80,14 @@ display: block;
     border-radius: 10px;
     padding: 10px;
     color: white;
+      border: solid 1px black;
+      cursor: pointer;
+}
+.categories p:hover{
+    transition: 1s;
+    background-color: transparent;
+    color: black;
+    border: solid 1px black;
 }
 
 .sale img {
@@ -162,4 +170,18 @@ display: block;
     left:50px;
     padding: 2%;
     border: solid 2px black;
+    animation-name: zoom;
+    animation-duration: 2s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+}
+@keyframes zoom{
+    0%{
+        opacity: 0;
+        transform: scale(0);
+    }
+    100%{
+        opacity: 1;
+       transform: scale(1);
+    }
 }
